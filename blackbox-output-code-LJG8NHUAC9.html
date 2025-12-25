@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Luxe Hotel</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#booking">Booking</a>
+            <a href="#admin">Admin</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Manage your hotel efficiently. Book rooms, check availability, and handle operations.</p>
+    </section>
+    
+    <section id="rooms">
+        <h2>Available Rooms</h2>
+        <div id="room-list"></div>
+    </section>
+    
+    <section id="booking">
+        <h2>Book a Room</h2>
+        <form id="booking-form">
+            <label for="name">Guest Name:</label>
+            <input type="text" id="name" required>
+            <label for="room">Room Number:</label>
+            <input type="number" id="room" required>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="booking-message"></p>
+    </section>
+    
+    <section id="admin">
+        <h2>Admin Panel</h2>
+        <button id="checkin-btn">Check In Guest</button>
+        <button id="checkout-btn">Check Out Guest</button>
+        <div id="admin-status"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
